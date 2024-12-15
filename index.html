@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My_Shop</title>
+    <meta name="Description" content="sur ce site vous allez decouvrir des accessoires de modes en vogue,Louis Vitton,Man's style ...">
+    <meta name="keywords" content="Mocassin Slippers, Thodess Girl, Thodess Man, Sunglasses, Suit, Pinky Girl, Hop Sweat">
+    <meta name="robots"  content="index, follow">
+    <title>My_Shop Wecode</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,11 +19,11 @@
 <body>
     <!-- Debut header -->
 
-    <header class="p-4 dark:bg-gray-100 dark:text-gray-800">
-      <div class="container flex justify-between h-16 mx-auto px-10">
-          <div class="flex mb-7">
+    <header class="container mx-auto p-4 ">
+      <div class="container flex justify-between h-16 mx-auto px-10 header-respon">
+          <div class="flex mb-7" >
               <a rel="noopener noreferrer" href="#" aria-label="Back to homepage" class="flex items-center p-2">
-                 <img src="Images_site/Logo.png" alt="Logo">
+                 <img src="Images_site/Logo.png" alt="Logo du site">
               </a>
               <ul class="items-stretch hidden space-x-3 lg:flex">
                   <li class="flex">
@@ -35,43 +38,59 @@
               </ul>
           </div>
           <div class="items-center flex-shrink-0 hidden lg:flex log">
-              <img src="Images_site/CartButton.png" alt="card">
+              <img src="Images_site/CartButton.png" alt="panier de commande">
               <button class="px-8 py-3">LOGIN</button>
           </div>
           <button class="p-4 lg:hidden log1 space-x-10">
-            <img src="Images_site/CartButton.png" alt="card">
+            <img src="Images_site/CartButton.png" alt="panier de commande">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 dark:text-gray-800">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
             </svg>
           </button> 
       </div>
-  </header>
-  <header class="header space-x-10">
-     <img class="search-icon" src="Images_site/Search.png" alt="search">
-    
-    <div class="search-bar max-w-sm">
-      <input type="text" class="search-input bar" placeholder="Search for My_Shop..." value="living room">
-    </div>
-    <div class="best">                       
-      <select class="text-gray-700">
-        <option value="#">Best match</option>
-        <option value="#">Gosen's Hoodies</option>
-        <option value="#">Shoes & Syle</option>  
-        <option value="#">The Style</option>
-        <option value="#">Thodess</option>
-      </select>
-      
-      <div class="bes sm:visible">
-        <select class="text-gray-700">
-          <option value="#">Filters</option>
-          <option value="#">Collection</option>
-          <option value="#">Color</option>
-          <option value="#">Category</option>
-        </select>
+      <div class="navdeux container mx-auto px-10">
+        <div class="bar">
+          <img src="Images_site/Search.png" alt="icon de recherche">
+          <div class="search relative">
+           
+              <input type="text" value="living room">
+           
+            <div class="fleur">
+              <h1>powered by Algolia</h1><span><img src="Images_site/SajariLogo.png" alt="logo de safari"></span>
+            </div>
+          </div>
+        </div>
+        <div class="best">
+          <select name="#" id="best">
+            <option value="">Best match</option>
+            <option value="#">Gosen's Hoodies</option>
+            <option value="#">Shoes & Syle</option>  
+            <option value="#">The Style</option>
+            <option value="#">Thodess</option>
+          </select> 
+        </div>
       </div>
-    </div>
-</header>
-
+      <div class="bestmatch container mx-auto p-4">  
+        <div class="bes">
+          <select class="text-gray-700">
+            <option value="#">Best match</option>
+            <option value="#">Gosen's Hoodies</option>
+            <option value="#">Shoes & Syle</option>  
+            <option value="#">The Style</option>
+            <option value="#">Thodess</option>
+          </select>
+        </div>                     
+        
+        <div class="fil ">
+          <select class="text-gray-700">
+            <option value="#">Filters</option>
+            <option value="#">Collection</option>
+            <option value="#">Color</option>
+            <option value="#">Category</option>
+          </select>
+        </div>
+      </div>
+  </header>
     <!-- Fin hearder -->
   <main class="container mx-auto p-6">
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
@@ -132,7 +151,7 @@
       </div>
               <!-- Fin filtre -->
                 <div class="product-card p-6 max-w-sm">
-                  <div class="hov overflow-hidden"><a href="#"><img src="Images_site/shoesM.jpg" class="image" alt="shoes"></a></div>
+                  <div class="hov overflow-hidden"><a href="#"><img src="Images_site/shoesM.jpg" class="image" alt="Mocassin noir"></a></div>
               
                   <!-- Description du produit -->
                   <div class="flex items-center justify-between">
@@ -160,7 +179,7 @@
 
            
               <div class="product-card p-6 max-w-sm">
-                <div class="overflow-hidden"><a href="#"><img src="Images_site/shoesG.jpg" class="image" alt="sho"></a></div>
+                <div class="overflow-hidden"><a href="#"><img src="Images_site/shoesG.jpg" class="image" alt="Thodess femme marron"></a></div>
                   <!-- Description du produit -->
                   <div class="flex items-center justify-between">
                       <h3 class="font-semibold text-lg tes">Thodess's Girl</h3>
@@ -187,7 +206,7 @@
 
              
                   <div class="product-card p-6 max-w-sm">
-                    <div class="overflow-hidden"><a href="#"><img src="Images_site/Sh1.jpg" class="image" alt="sh"></a></div>
+                    <div class="overflow-hidden"><a href="#"><img src="Images_site/Sh1.jpg" class="image" alt=" Thodess homme noir"></a></div>
                   <!-- Description du produit -->
                   <div class="flex items-center justify-between">
                       <h3 class="font-semibold text-lg tes">Thodess's Man</h3>
@@ -214,7 +233,7 @@
             
 
                   <div class="product-card p-6 max-w-sm">
-                    <div class="overflow-hidden"><a href="#"><img src="Images_site/glass.jpg" class="image" alt="glass"></a></div>
+                    <div class="overflow-hidden"><a href="#"><img src="Images_site/glass.jpg" class="image" alt="class Sunglasses"></a></div>
               
                   <!-- Description du produit -->
                   <div class="flex items-center justify-between">
@@ -242,7 +261,7 @@
               
 
                  <div class="product-card p-6 max-w-sm">
-                  <div class="overflow-hidden"><a href="#"><img src="Images_site/Woman.jpg" class="image" alt="Woman"></a></div>
+                  <div class="overflow-hidden"><a href="#"><img src="Images_site/Woman.jpg" class="image" alt="Pinky Girl"></a></div>
                   <!-- Description du produit -->
                   <div class="flex items-center justify-between">
                       <h3 class="font-semibold text-lg tes">Pinky Girl</h3>
@@ -262,14 +281,14 @@
                 
                     <!-- Image du chariot -->
                     <a href="#" class="card w-8 h-8">
-                      <img src="Images_site/CartButton.png" alt="Chariot">
+                      <img src="Images_site/CartButton.png" alt="panier">
                     </a>
                   </div>
                 </div>
       
 
                 <div class="product-card p-6 max-w-sm">
-                  <div class="overflow-hidden"><a href="#"><img src="Images_site/man.jpg" class="image" alt="man"></a></div>
+                  <div class="overflow-hidden"><a href="#"><img src="Images_site/man.jpg" class="image" alt="Suit a capuche noir homme"></a></div>
                 
                   <!-- Description du produit -->
                   <div class="flex items-center justify-between">
@@ -297,7 +316,7 @@
                 
 
                 <div class="product-card p-6 max-w-sm">
-                  <div class="overflow-hidden"><a href="#"><img src="Images_site/pull.jpg" class="image" alt="pull"></a></div>
+                  <div class="overflow-hidden"><a href="#"><img src="Images_site/pull.jpg" class="image" alt="hop Sweat couleur arc-en-ciel"></a></div>
                 
                   <!-- Description du produit -->
                   <div class="flex items-center justify-between">

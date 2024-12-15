@@ -1,8 +1,79 @@
 *{
     font-family: 'Roboto';  
+    background-color: white;
 }
 
 /* Debut header */
+
+.header{
+  display:flex;
+  background-color: white;
+}
+.navdeux{
+  
+  background-color: white;
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+  margin-left: 9%;
+  margin-top: 15px;
+}
+.navdeux .best{
+/* border: 1px solid red; */
+  width: 30%;
+}
+.navdeux .bar .search .fleur{
+ 
+  position: absolute;
+  top: -2px;
+  width: 200px;
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  left:83%;
+} 
+ .relative{
+  display: flex;
+ justify-content: space-between;
+ align-items: center;
+  width: 100%;
+ } 
+
+.best select{
+  border-bottom: 1px solid;
+  width: 120%;
+  background: white;
+  padding: 10px;
+  margin-left: -50px;
+}
+.navdeux .bar{
+  display: flex;
+  width: 110%;
+  gap: 2rem;
+  margin: 10px;
+  align-items: center;
+}
+.navdeux .bar .search{
+  width: 100%;
+}
+.navdeux .bar .search input{
+  border-top: none;
+  outline: none;
+  border-bottom: 2px solid;
+   width: 100%; 
+}
+.log{
+  margin-right: -2%;
+}
+.log1{
+  display: flex;
+}
+.search input{
+  font-size: 25px;
+  opacity: 0.8;
+  font-weight: bold;
+}
+/* 
 .log{
   margin-right: -2%;
 }
@@ -55,28 +126,39 @@
   border-bottom: 0.2px solid gray;
   background-color: white;
 
-}
+} */
 
 /* Fin header */
 
-.bes{
+.bestmatch{
   display: none;
 }
 @media (max-width: 768px) {
   .filters {
-      position: fixed;
-      left: 100%;
-      top: 0;
-      height: 100vh;
-      width: 80%;
-      max-width: 300px;
-      z-index: 1000;
+    display: none;
+  }
+  .best{
+    display: none;
+  }
+  .bestmatch{
+    display: block;
+    visibility: visible;
+    margin: 15px;
+    
+  }
+  .fleur h1,span{
+    display: none;
+   
   }
   .bes{
-    display: flex;
-    visibility: visible;
+    margin: 20px;
   }
-}
+  .fil{ 
+    padding-bottom: 15px;
+    margin: 20px;
+  }
+  
+} 
 
 /* Debut filtre */
 
