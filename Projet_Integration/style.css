@@ -1,0 +1,251 @@
+*{
+    font-family: 'Roboto';  
+}
+
+/* Debut header */
+.log{
+  margin-right: -2%;
+}
+.log1{
+  display: flex;
+}
+.header{
+  display:flex;
+}
+.search-bar {
+  position: relative;
+  max-width: 720px;
+}
+.search-bar .bar{
+  padding: 9px;
+  width: 100%;
+  font-size: 15px;
+  border-color:white ;
+  border-bottom: 5px solid black;
+  background-color: white;
+
+}
+.search-input {
+  padding: 12px 40px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  background: #f4f4f4;
+}
+
+.search-icon {
+  position: relative;
+  margin-left: 7%;
+  height: 10%;
+  padding-top: -10%;
+}
+
+.best {
+  margin-bottom: 15px;
+  padding-top: 0.7%;
+  height: 30%;
+}
+
+.best select{
+  width: 110%;
+  margin-left: -5%;
+  padding: 9px;
+  font-size: 15px;
+  border-color:white ;
+  border-bottom: 0.2px solid gray;
+  background-color: white;
+
+}
+
+/* Fin header */
+
+.bes{
+  display: none;
+}
+@media (max-width: 768px) {
+  .filters {
+      position: fixed;
+      left: 100%;
+      top: 0;
+      height: 100vh;
+      width: 80%;
+      max-width: 300px;
+      z-index: 1000;
+  }
+  .bes{
+    display: flex;
+    visibility: visible;
+  }
+}
+
+/* Debut filtre */
+
+.filter_h3 {
+  font-size: 15px;
+  margin-bottom: 20px;
+  padding-bottom: 25px;
+  text-align: left;
+  opacity: 0.4;
+  margin: 10px;
+}
+
+.les_items {
+  margin-bottom: 15px;
+  height: 30%;
+  padding: 20px;
+  margin-left: -6%;
+  margin-top: -25px;
+}
+
+label {
+  font-weight: normal;
+  margin-bottom: 5px;
+  margin: 8px;
+  display: block;
+}
+
+select{
+  width: 110%;
+  height: 30%;
+  margin-left: -5%;
+  padding: 9px;
+  font-size: 15px;
+  border-color:white ;
+  border-bottom: 1px solid gray;
+  background-color: white;
+
+}
+input[type="range"] {
+  width: 100%;
+  margin-left: -4%;
+  padding: 10px;
+  font-size: 15px;
+  border-color:white ;
+  border-bottom: 1px solid gray;
+  background-color: white;
+
+}
+
+/* Price Range */
+
+
+.slider{
+  height: 1px;
+  width: 95%;
+  top: 20px;
+  margin: 8px;
+  position: relative;
+  background: gray;
+}
+.slider .progress{
+  height: 1px;
+  right: 0%;
+  position: absolute;
+  background: gray;
+}
+.range-input{
+  position: relative;
+}
+
+.range-input input{
+  position: absolute;
+  top: -10px;
+  height: 0px;
+  border: none;
+  background: none;
+  pointer-events: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+  cursor: pointer;
+  background: white;
+  pointer-events: auto;
+  border:2px solid black;
+}
+input[type="range"]::-moz-range-thumb {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: white;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+input[type="range"]::-ms-thumb {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: white;
+  border: 2px solid black;
+  cursor: pointer;
+}
+.range-input .range-min{
+  margin-left: -5%;
+}
+.range-input .range-max{
+  width: 109%;
+}
+.price-input{
+  display: flex;
+  position: relative;
+  top: 40px;
+  margin: 5px;
+  justify-content: space-between;
+}
+
+@media (max-width:600px){
+  .allinone{
+   max-width: 100%;
+  }
+}
+
+
+
+/* Fin filtre */
+
+
+
+/* Sous Image */
+
+.image{
+    height: 5%;
+}
+.card{
+    margin-right: 10px;
+}
+.price{
+    margin-right: 15px;
+}
+.tes{
+    margin-left: 16px;
+}
+.star{
+    margin-left: 16px;
+}
+
+
+/* Pagination */
+
+.pagination {
+    display: inline-block;
+    margin-top: 50px;
+  }
+  
+.pagination a {
+    color: black;
+    float: left;
+    margin-left: 20px;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+  
+.pagination a.active {
+    background-color: black;
+    color: white;
+}
